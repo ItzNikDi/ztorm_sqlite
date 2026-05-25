@@ -30,12 +30,14 @@ On Windows, grab a precompiled binary from the [download link](https://sqlite.or
 
 ## Installation
 
+### 0. Add ztorm by following its steps first - those are found [here](https://github.com/ItzNikDi/ztorm);
+
 ### 1. Add dependency
 ```shell
 zig fetch --save "git+https://github.com/ItzNikDi/ztorm_sqlite.git#main"
 ```
 
-### 2. Wire up `build.zig`:
+### 2. Wire up `build.zig`
 
 ```zig
 const ztorm = b.dependency("ztorm", .{
@@ -65,7 +67,7 @@ const zt_sqlite = @import("ztorm_sqlite");
 const driver = try zt_sqlite.open(allocator, "app.db");
 defer driver.close();
 
-var db = ztorm.DB(ztorm.dialects.SQLite).init(driver);
+var db = ztorm.DB(ztorm.dialect.SQLite).init(driver);
 ```
 
 Pass `":memory:"` instead for an in-memory database:

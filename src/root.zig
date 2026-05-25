@@ -208,9 +208,9 @@ fn close(ctx: *anyopaque) void {
 ///
 /// Example:
 /// ```zig
-///   const drv = try sqlite.open(allocator, "app.db");
-///   defer drv.close();
-///   var db = ztorm.DB(ztorm.dialects.SQLite).init(drv);
+///   const driver = try zt_sqlite.open(allocator, "app.db");
+///   defer driver.close();
+///   var db = ztorm.DB(ztorm.dialect.SQLite).init(driver);
 /// ```
 pub fn open(allocator: Allocator, path: [:0]const u8) Error!Driver {
     var db: ?*sqlite.sqlite3 = null;

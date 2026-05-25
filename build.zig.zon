@@ -1,12 +1,12 @@
 .{
     .name = .ztorm_sqlite,
-    .version = "0.1.0",
+    .version = "0.1.1",
     .fingerprint = 0x92e0313038cb7830,
     .minimum_zig_version = "0.16.0",
     .dependencies = .{
         .ztorm = .{
-            .url = "git+https://github.com/ItzNikDi/ztorm.git?ref=main#065d09f6fe518fcddcad420864ba9ca49229459b",
-            .hash = "ztorm-0.1.0-KZJhD1F3AAC9yVHo63kcS0pvUxRwZhyzxKI49cGKStJl",
+            .url = "git+https://github.com/ItzNikDi/ztorm.git?ref=main#a876461e1fd24ec42c71ec85b84275a4bf7c702d",
+            .hash = "ztorm-0.1.1-KZJhDzB5AADYJkFBnxkAFHZ43xzfZ2TwXzdi_GWmhksi",
         },
     },
     .paths = .{
