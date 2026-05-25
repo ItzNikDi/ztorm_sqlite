@@ -1,0 +1,18 @@
+.{
+    .name = .ztorm_sqlite,
+    .version = "0.1.0",
+    .fingerprint = 0x92e0313038cb7830,
+    .minimum_zig_version = "0.16.0",
+    .dependencies = .{
+        .ztorm = .{
+            .url = "git+https://github.com/ItzNikDi/ztorm.git?ref=main#065d09f6fe518fcddcad420864ba9ca49229459b",
+            .hash = "ztorm-0.1.0-KZJhD1F3AAC9yVHo63kcS0pvUxRwZhyzxKI49cGKStJl",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+        "README.md",
+    },
+}
